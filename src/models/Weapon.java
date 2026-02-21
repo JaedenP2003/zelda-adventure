@@ -1,0 +1,20 @@
+package models;
+
+/*
+ Weapons determine player damage output.
+
+ Separate class makes upgrades easy later.
+*/
+public class Weapon extends Item {
+
+    private int damage;
+
+    public Weapon(String name, int damage) {
+        super(name);
+        this.damage = damage;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+}
